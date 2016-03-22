@@ -1,0 +1,14 @@
+extends layout
+
+block content
+    .container
+        h1 Web Catcher
+        p Welcome to Web Catcher
+        .row
+            .input-group
+                input#web-url.form-control(type="text" placeholder="URL: example: www.baidu.com")
+                span.input-group-btn
+                    button#web-url-button.btn.btn-success(type="button") Go!
+
+        script(src="javascripts/index.js")
+    iframe#display-iframe(src="" frameborder="0" width="100%" height="1000px")
